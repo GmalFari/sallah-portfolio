@@ -39,7 +39,8 @@ const Home = () => {
             <h2>Bussiness translator /  Teacher </h2>
             <Link to="/contact" className="flat-button" >CONTACT ME</Link>
       </div>
-      
+      </div>
+    <Logo/>
         
     </div>
   )
