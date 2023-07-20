@@ -8,7 +8,7 @@ const Logo = () => {
   const solidLogoRef = useRef()
   
   useEffect(()=>{
-      let ctx = gsap.context(() => {
+  /*    let ctx = gsap.context(() => {
       gsap.to(bgRef.current,{
           duration:1,
           opacity:1,
@@ -31,6 +31,7 @@ const Logo = () => {
      }, bgRef); // <- IMPORTANT! Scopes selector text
   
   return () => ctx.revert(); // cleanup
+    */
     },[])
   return (
 
