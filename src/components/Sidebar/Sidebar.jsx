@@ -15,6 +15,7 @@ import {
   faUser,
   faEnvelope,
   faSuitcase,
+
   // eslint-disable-next-line no-unused-vars
   faBars,
   faClose,
@@ -40,7 +41,7 @@ const Sidebar = () => {
         to="/"
         onClick={() => setShowNav(false)}>
         <img src={LogoS} alt="Logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
+        {/* <img className="sub-logo" src={LogoSubtitle} alt="slobodan" /> */}
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink 
@@ -131,8 +132,8 @@ const Sidebar = () => {
         </li>
       </ul>
       <FontAwesomeIcon 
-          // onClick={() => setShowNav(true)}
-          // icon={faBars}
+          onClick={() => setShowNav(true)}
+          icon={faBars}
           color="#ffd700"
           size="3x"
           className='hamburger-icon' />
