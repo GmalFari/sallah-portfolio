@@ -1,4 +1,9 @@
 .home-page {
+       user-select: none; 
+         -moz-user-select: none;
+         -webkit-text-select: none;
+         -webkit-user-select: none;
+     
     .text-zone {
         position:absolute;
         left:10%;
