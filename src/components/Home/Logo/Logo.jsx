@@ -1,32 +1,31 @@
 import "./logo.scss"
 import LogoS from "../../../assets/images/logo-s.png"
 import { useEffect, useRef } from "react"
-import { gsap } from "gsap"
 const Logo = () => {
   const bgRef = useRef()
   const outlineLogoRef = useRef()
   const solidLogoRef = useRef()
   
   useEffect(()=>{
-   let ctx = gsap.context(() => {
-      gsap.to(bgRef.current,{
-          duration:1,
-          opacity:1,
-      })
+  //  let ctx = gsap.context(() => {
+  //     gsap.to(bgRef.current,{
+  //         duration:1,
+  //         opacity:1,
+  //     })
      
 
-      gsap.fromTo(
-        solidLogoRef.current,{
-          opacity:0,
-        },
-        {
-          opacity:1,
-          delay:4,
-          duration:4
-        }
-      )
-     }, bgRef); // <- IMPORTANT! Scopes selector text
-  
+  //     gsap.fromTo(
+  //       solidLogoRef.current,{
+  //         opacity:0,
+  //       },
+  //       {
+  //         opacity:1,
+  //         delay:4,
+  //         duration:4
+  //       }
+  //     )
+  //    }, bgRef); // <- IMPORTANT! Scopes selector text
+  },[])
   return () => ctx.revert(); // cleanup
     
     },[])
