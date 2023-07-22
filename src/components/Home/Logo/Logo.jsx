@@ -8,15 +8,12 @@ const Logo = () => {
   const solidLogoRef = useRef()
   
   useEffect(()=>{
-  /*    let ctx = gsap.context(() => {
+   let ctx = gsap.context(() => {
       gsap.to(bgRef.current,{
           duration:1,
           opacity:1,
       })
-      .from(outlineLogoRef.current,{
-          drawSVG:1,
-          duration:2
-      })
+     
 
       gsap.fromTo(
         solidLogoRef.current,{
@@ -31,7 +28,7 @@ const Logo = () => {
      }, bgRef); // <- IMPORTANT! Scopes selector text
   
   return () => ctx.revert(); // cleanup
-    */
+    
     },[])
   return (
 
@@ -48,7 +45,7 @@ const Logo = () => {
 fill="none"
 transform="translate(0.000000,897.000000) scale(0.100000,-0.100000)"
 stroke="#ffd700"
- >
+ >  
 <path
   ref={outlineLogoRef}
  d="M2930 8959 c-344 -16 -623 -85 -915 -228 -231 -114 -406 -241 -600
