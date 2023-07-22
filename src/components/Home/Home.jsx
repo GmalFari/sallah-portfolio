@@ -38,11 +38,10 @@ const Home = () => {
             </h1>
             <h2>Bussiness translator /  Teacher </h2>
             <Link to="/contact" className="flat-button" >CONTACT ME</Link>
+      </div>
        <Logo/>
       </div>
-      </div>
         
-  
   )
 }
 
