@@ -25,8 +25,8 @@ const Logo = () => {
   //       }
   //     )
   //    }, bgRef); // <- IMPORTANT! Scopes selector text
-  },[])
-  return () => ctx.revert(); // cleanup
+  // },[])
+  // return () => ctx.revert(); // cleanup
     
     },[])
   return (
